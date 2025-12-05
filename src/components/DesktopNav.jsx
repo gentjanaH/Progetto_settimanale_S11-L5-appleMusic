@@ -6,7 +6,7 @@ const DesktopNav = function () {
             <Container fluid className="bg-dark text-light vh-100">
                 <Row className="vh-100">
                     <Col xs={12} className="d-none d-lg-flex flex-column">
-                        <img className=" my-3"
+                        <img className="logo my-3"
                             style={{ width: "90px" }}
                             src="/logos/music.svg"
                             alt="Company logo" />

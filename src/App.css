@@ -2,6 +2,10 @@
     border: none;
 }
 
-img {
+.logo {
     filter: invert(1) brightness(100);
+}
+
+.lista {
+    background-color: #3b4248;
 }

@@ -8,6 +8,7 @@ import store from "./redux/store"
 import { Container, Row, Col } from "react-bootstrap"
 import DesktopNav from "./components/DesktopNav"
 import NovitàStaticSection from "./components/NovitàStaticSection"
+import AltroStaticSection from "./components/AltroStaticSectio"
 
 function App() {
 
@@ -28,6 +29,9 @@ function App() {
                 </Col>
                 <Col xs={12} className="d-flex flex-end p-0">
                   <DinamicSection />
+                </Col>
+                <Col xs={12} className="d-flex flex-end p-0">
+                  <AltroStaticSection />
                 </Col>
               </Row>
             </Col>

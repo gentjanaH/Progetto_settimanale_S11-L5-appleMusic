@@ -21,8 +21,8 @@ const DinamicSection = function () {
 
     return (
         <Container fluid className="bg-dark text-light">
-            <Row>
-                <h6>Nuove uscite</h6>
+            <Row className="g-3">
+                <h4 className="my-5">Nuove uscite</h4>
                 {data && data.length > 0 ? (
 
 
@@ -30,7 +30,7 @@ const DinamicSection = function () {
                         <>
                             <Col key={song.id} xs={4} md={3} lg={2}>
                                 <Card className="h-100 border-0">
-                                    <Card.Img className="img-fluid w-100 border-bottom-2" variant="top" src={song.album.cover_small} />
+                                    <Card.Img className="img-fluid w-100" variant="top" src={song.album.cover_medium} />
                                     <Card.Body className="bg-dark text-light">
                                         <h6 className="fs-6"> {song.title}</h6>
                                         <p className="fs-6">
