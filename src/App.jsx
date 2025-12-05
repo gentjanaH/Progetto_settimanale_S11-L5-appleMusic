@@ -9,6 +9,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import DesktopNav from "./components/DesktopNav"
 import NovitàStaticSection from "./components/NovitàStaticSection"
 import AltroStaticSection from "./components/AltroStaticSectio"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
   return (
     <>
       <Provider store={store}>
-        <Container fluid>
+        <Container fluid className="d-flex ">
           <Row >
             <Col lg={2} className="d-none d-lg-flex p-0 vh-100">
               <DesktopNav />
@@ -35,9 +36,9 @@ function App() {
                 </Col>
               </Row>
             </Col>
-
-
-
+            <Col xs={12} >
+              <Footer />
+            </Col>
           </Row>
 
 
