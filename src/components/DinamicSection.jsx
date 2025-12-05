@@ -22,20 +22,20 @@ const DinamicSection = function () {
     return (
         <Container fluid className="bg-dark text-light">
             <Row>
-                <h2>Risultati musica</h2>
+                <h6>Nuove uscite</h6>
                 {data && data.length > 0 ? (
 
 
-                    data.map((song) => (
+                    data.slice(0, 12).map((song) => (
                         <>
-                            <Col key={song.id} xs={4} md={3}>
+                            <Col key={song.id} xs={4} md={3} lg={2}>
                                 <Card className="h-100 border-0">
                                     <Card.Img className="img-fluid w-100 border-bottom-2" variant="top" src={song.album.cover_small} />
                                     <Card.Body className="bg-dark text-light">
-                                        <Card.Title className="fs-6"> {song.title}</Card.Title>
-                                        <Card.Text>
+                                        <h6 className="fs-6"> {song.title}</h6>
+                                        <p className="fs-6">
                                             {song.artist.name}
-                                        </Card.Text>
+                                        </p>
 
                                     </Card.Body>
                                 </Card>
