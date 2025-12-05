@@ -1,0 +1,7 @@
+.custom-toggle {
+    border: none;
+}
+
+img {
+    filter: invert(1) brightness(100);
+}
