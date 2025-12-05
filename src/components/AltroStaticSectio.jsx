@@ -86,13 +86,6 @@ const AltroStaticSection = function () {
                             </Card>
                         </Col>
 
-
-
-
-
-
-
-
                     </Row>
                 </Col>
 
