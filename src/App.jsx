@@ -15,26 +15,28 @@ function App() {
   return (
     <>
       <Provider store={store}>
-        <Container fluid className="">
-
+        <Container fluid>
           <Row >
-            <Col xs={12} className="p-0">
-              <MyNavbar />
-            </Col>
-          </Row>
-          <Row>
-            <Col lg={2} className="d-none d-lg-flex p-0">
+            <Col lg={2} className="d-none d-lg-flex p-0 vh-100">
               <DesktopNav />
             </Col>
             <Col xs={12} lg={10} className="p-0">
-              <NovitàStaticSection />
+              <MyNavbar />
+              <Row>
+                <Col xs={12} className="p-0">
+                  <NovitàStaticSection />
+                </Col>
+                <Col xs={12} className="d-flex flex-end p-0">
+                  <DinamicSection />
+                </Col>
+              </Row>
             </Col>
 
-            <Col xs={12} lg={10} className="d-flex flex-end p-0">
-              <DinamicSection />
-            </Col>
+
 
           </Row>
+
+
         </Container>
       </Provider>
     </>

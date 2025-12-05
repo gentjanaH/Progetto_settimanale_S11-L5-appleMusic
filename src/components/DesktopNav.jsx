@@ -3,12 +3,12 @@ import { Col, Container, Row, InputGroup, Form, Button } from "react-bootstrap";
 const DesktopNav = function () {
     return (
         <>
-            <Container fluid className="bg-dark text-light">
-                <Row>
+            <Container fluid className="bg-dark text-light vh-100">
+                <Row className="vh-100">
                     <Col xs={12} className="d-none d-lg-flex flex-column">
                         <img className=" my-3"
                             style={{ width: "90px" }}
-                            src="./public/logos/music.svg"
+                            src="/logos/music.svg"
                             alt="Company logo" />
                         <InputGroup className="mb-3 ">
                             <InputGroup.Text className="bg-dark">

@@ -12,7 +12,7 @@ const MyNavbar = function () {
               </Button>
             </Col>
             <Col className="text-center">
-              <img className="d-lg-none" src="./public/logos/music.svg" alt="Company logo" />
+              <img className="d-lg-none" src="/logos/music.svg" alt="Company logo" />
 
 
             </Col>
